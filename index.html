@@ -10,27 +10,27 @@
     <h1>Sofia Figueredo</h1>
     <div class="calculator">
         <input type="text" id="display" disabled>
-        <div class="components">
-            <button>AC</button>
-            <button>DEL</button>
-            <button>%</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>X</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button>0</button>
-            <button>.</button>
-            <button>3</button>
+        <div class="box-bottom">
+            <button onclick="displayValue('AC')">AC</button>
+            <button onclick="clean()">DEL</button>
+            <button onclick="displayValue('/')">/</button>
+            <button onclick="displayValue('x')">x</button>
+            <button onclick="displayValue('7')">7</button>
+            <button onclick="displayValue('8')">8</button>
+            <button onclick="displayValue('9')">9</button>
+            <button onclick="displayValue('-')">-</button>
+            <button onclick="displayValue('4')">4</button>
+            <button onclick="displayValue('5')">5</button>
+            <button onclick="displayValue('6')">6</button>
+            <button onclick="displayValue('+')">+</button>
+            <button onclick="displayValue('1')">1</button>
+            <button onclick="displayValue('2')">2</button>
+            <button onclick="displayValue('3')">3</button>
+            <button class="btn-zero" onclick="displayValue('0')">0</button>
+            <button onclick="displayValue('.')">.</button>
+            <button class="btn-equal" onclick="displayValue('=')">=</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
