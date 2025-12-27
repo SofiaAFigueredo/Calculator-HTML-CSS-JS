@@ -15,7 +15,22 @@ function removeOne(){
 function result(){
     try{
         display.value = eval(display.value)
-    } catch{
+
+        if(display.value == "undefined"){
+            setTimeout(() => {
+            clean()
+           }, 1000);
+        }
+        display.value += value;
+    } 
+    catch{
         display.value = "Error"
+
+        if(display.value == "Error"){
+           setTimeout(() => {
+            clean()
+           }, 1000);
+        }
+        display.value += value;
     }
 }
