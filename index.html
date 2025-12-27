@@ -11,7 +11,7 @@
     <div class="calculator">
         <input type="text" id="display" disabled>
         <div class="box-bottom">
-            <button onclick="displayValue('AC')">AC</button>
+            <button onclick="removeOne('AC')">AC</button>
             <button onclick="clean()">DEL</button>
             <button onclick="displayValue('/')">/</button>
             <button onclick="displayValue('x')">x</button>
@@ -28,7 +28,7 @@
             <button onclick="displayValue('3')">3</button>
             <button class="btn-zero" onclick="displayValue('0')">0</button>
             <button onclick="displayValue('.')">.</button>
-            <button class="btn-equal" onclick="displayValue('=')">=</button>
+            <button class="btn-equal" onclick="result()">=</button>
         </div>
     </div>
     <script src="script.js"></script>

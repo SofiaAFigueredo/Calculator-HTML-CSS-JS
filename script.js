@@ -1,7 +1,21 @@
+const display = document.querySelector('#display');
+
 function displayValue(data){
-    document.querySelector('#display').value += data;
+    display.value += data;
 }
 
 function clean(){
-   document.querySelector('#display').value = ' '
+   display.value = ' ';
+}
+
+function removeOne(){
+    display.value = display.value.slice(0, -1);
+}
+
+function result(){
+    try{
+        display.value = eval(display.value)
+    } catch{
+        display.value = "Error"
+    }
 }
