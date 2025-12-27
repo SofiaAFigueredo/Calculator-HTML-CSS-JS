@@ -34,6 +34,8 @@ Você pode acessar a calculadora diretamente pelo navegador no link abaixo:
 **Sofia Alves Figueredo**  
 Projeto desenvolvido para prática de HTML, CSS e JavaScript.
 
+<br>
+
 # Simple Calculator 🇺🇸
 
 ## Description
